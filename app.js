@@ -37,3 +37,63 @@ const [firstIngredient, secondIngredient] = pizzaToppings;
 console.log(firstIngredient);
 console.log(secondIngredient);
 
+// ! Exercise 3:
+// a. Given the provided `car` object, use destructuring to create two
+//    variables: `make` and `model` that will hold the respective values.
+//
+// b. Console log the `make` and `model` variables.
+//
+// Starting code (don't modify this):
+
+const car = {
+    make: 'Audi',
+    model: 'Q5',
+};
+
+// Your code here:
+const { make, model } = car;
+console.log(make);
+console.log(model);
+
+
+// ! Exercise 4: 
+// a. Duplicate the provided `morePizzaToppings` array using the spread 
+//    operator and assign it to a variable named `uncontroversialPizzaToppings`.
+// 
+// b. Console log the `uncontroversialPizzaToppings` variable.
+//
+// Starting code (don't modify this):
+
+const morePizzaToppings = ['Cheese', 'Sauce'];
+
+// Your code here:
+
+const uncontroversialPizzaToppings = [...morePizzaToppings];
+
+console.log(uncontroversialPizzaToppings);
+
+// ! Exercise 5:
+// a. Duplicate the provided `anotherCar` object and spread its values into a 
+//    new variable named `myCar`.
+//
+// b. Change the `make` and `model` properties of the `myCar` object to new 
+//    values.
+//
+// c. Console log both objects and observe the results.
+//
+// Starting code (don't modify this):
+
+const anotherCar = {
+    make: 'Toyota',
+    model: 'RAV4',
+  };
+  
+  // Your code here:
+  
+  const myCar = {...anotherCar};
+
+  myCar.make = 'Honda';
+  myCar.model = 'Civic';
+
+  console.log(anotherCar);
+  console.log(myCar);
